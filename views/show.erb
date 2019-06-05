@@ -3,7 +3,8 @@
 <p>Topping: <%= @order.topping %></p>
 <p>Quantity: <%= @order.quantity %></p>
 
-<form action="/pizza-orders/<%= @order.id %>/edit" method="get">
-
-  <input type="submit" value="Edit">
+<form action="/pizza-orders/<%=@order.id%>/delete" method="post">
+  <input type="submit" value="Delete">
 </form>
+
+<p><a href="/pizza-orders/<%= @order.id %>/edit">Edit</a></p>
